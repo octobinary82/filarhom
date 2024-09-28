@@ -3,3 +3,4 @@ pymupdf4llm
 llama_index
 g4f
 nodriver
+curl_cffi
