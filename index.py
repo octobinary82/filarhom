@@ -30,10 +30,6 @@ class SimpleHandler(BaseHTTPRequestHandler):
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
 
-            # Aqui você pode processar o corpo e gerar uma resposta personalizada
-            response = f"Body received: {body}"
-            print(response)  # Exibir o corpo recebido no console
-
             # Exemplo: Simulação de resposta (altere 'get_gpt_response' conforme necessário)
             self.wfile.write(get_gpt_response(body).encode('utf-8'))
         else:
